@@ -158,7 +158,6 @@ ul, ol {
     display: flex;
     justify-content: center;
     color: #ffffff;
-    fill: #ffffff;
     background: linear-gradient(to right, #0d47a1, #1565c0, #1976d2);
 }
 
@@ -180,6 +179,7 @@ ul, ol {
 
 .footer-logo {
     width: 90px;
+    fill: #ffffff;
 }
 
 .footer-social-container {
@@ -195,9 +195,20 @@ ul, ol {
 .social-icon {
     width: 25px;
     height: 25px;
+    fill: #ffffff;
 }
 
 
+/*TO-DO APP*/
+.add-task-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.task-control-icon {
+    width: 20px;
+    height: 20px;
+}
 
 /*LAPTOP LAYOUT*/
 @media (min-width: 1280px) and (max-width: 1536px) {
