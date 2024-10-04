@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: "Open Sans", sans-serif;
     color: #333333;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -200,15 +200,92 @@ ul, ol {
 
 
 /*TO-DO APP*/
+.todo-main-container {
+    width: 40em;
+    height: 45em;
+    border: 1px solid #D3D3D3;
+    border-radius: 12px;
+}
+
+.todo-title {
+    font-size: 1.6rem;
+}
+
+.todo-description {
+    font-size: 1.2rem;
+}
+
+.task-control-btn:not(.complete-task-btn) {
+    padding: 0;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.todo-content-container {
+    font-size: 14px;
+}
+
 .add-task-icon {
     width: 30px;
     height: 30px;
+    fill: #4CAF50;
+}
+
+.main-task-container {
+    width: 20em;
+    height: 40px;
+    margin: 1em;
+    border: 1px solid #D3D3D3;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+}
+
+.task-name {
+    font-weight: 500;
 }
 
 .task-control-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.task-control-icon:not(.complete-task-icon) {
+    fill: #0d47a1;
+}
+
+.complete-task-btn {
     width: 20px;
     height: 20px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #9b9b9b;
+    cursor: pointer;
+    position: relative;
 }
+
+.complete-task-icon {
+    width: 80%;
+    height: 80%;
+    display: none;
+    fill: #9b9b9b;
+    position: absolute;
+}
+
+.complete-task-btn:hover > .complete-task-icon {
+    display: block;
+}
+
+
+
+
+
+
 
 /*LAPTOP LAYOUT*/
 @media (min-width: 1280px) and (max-width: 1536px) {
