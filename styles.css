@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     margin: 0;
@@ -41,7 +41,7 @@ ul, ol {
 
 .site-content {
     width: 100%;
-    height: 100%;
+    height: 800px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -154,7 +154,7 @@ ul, ol {
 
 .site-footer {
     width: 100%;
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -206,6 +206,7 @@ ul, ol {
     display: flex;
     flex-flow: column nowrap;
     gap: 2em;
+    padding: 12px;
     border: 1px solid #D3D3D3;
     border-radius: 12px;
 }
@@ -228,9 +229,6 @@ ul, ol {
     top: 100%;
 }
 
-
-
-
 .todo-title {
     margin-top: 1em;
     font-family: "Playfair Display", serif;
@@ -239,6 +237,11 @@ ul, ol {
 
 .todo-description {
     font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.todo-description-mobile {
+    display: none;
 }
 
 .todo-controls-container {
@@ -329,6 +332,7 @@ ul, ol {
 
 .complete-task-btn:hover > .complete-task-icon {
     display: block;
+    top: 0.2em;
 }
 
 
@@ -339,11 +343,17 @@ ul, ol {
 
 /*LAPTOP LAYOUT*/
 @media (min-width: 1280px) and (max-width: 1536px) {
-
+    .site-content {
+        height: 800px;
+    }
 }
 
 /*TABLET LAYOUT*/
 @media (min-width: 768px) and (max-width: 1279px) {
+    .site-content {
+        height: 800px;
+    }
+
     .main-tools-container {
         flex-flow: column nowrap;
     }
@@ -385,4 +395,32 @@ ul, ol {
         display: block;
         font-size: 12px;
     }
+
+    .site-content {
+        height: 800px;
+    }
+
+    .todo-main-container {
+        width: 320px;
+        height: 680px;
+        font-size: 12px;
+    }
+
+    .todo-title {
+        font-size: 1.6rem;
+    }
+
+    .todo-description {
+        display: none;
+    }
+
+    .todo-description-mobile {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .control-instructions {
+        font-size: 0.8rem;
+    }
+
 }
