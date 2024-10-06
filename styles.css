@@ -11,18 +11,6 @@ body {
     background-color: #ffffff;
 }
 
-/*
-DELETE TASK MODAL FUNCTIONALITY
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}*/
-
 h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
@@ -213,6 +201,10 @@ ul, ol {
 
 
 /*TO-DO APP*/
+.site-content {
+    position: relative;
+}
+
 .todo-main-container {
     width: 40em;
     height: 45em;
@@ -348,10 +340,57 @@ ul, ol {
     top: 0.2em;
 }
 
+/*
+DELETE TASK OVERLAY
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}*/
 
+.delete-task-modal {
+    width: 400px;
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 1px solid #D3D3D3;
+    background-color: #ffffff;
+}
 
+.delete-modal-btn-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5em;
+}
 
+.delete-modal-btn {
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
+#cancelDeletionBtn {
+    color: #808080;
+    background-color: #ffffff;
+    border: 1px solid #ea4c89;
+}
+
+#confirmDeletionBtn {
+    color: #ffffff;
+    background-color: #ea4c89;
+}
 
 
 /*LAPTOP LAYOUT*/
