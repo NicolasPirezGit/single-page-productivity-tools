@@ -11,7 +11,7 @@ const handleAddTask = () => {
 
 const handleDeleteTask = () => {
     const deleteTaskBtn = document.querySelector(".delete-task-btn");
-
+    
 
 }
 
